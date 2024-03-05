@@ -1,5 +1,5 @@
 /*
- * Created on 2024-02-17
+ * Created on 2024-03-04
  *
  * Copyright (c) 2024 Nadine von Frankenberg
  */
@@ -26,17 +26,22 @@ public class App {
                 // TODO: Implement and test both methods; this currently fails!
                 // MergeSort.sort(cats, 0, cats.length -1);
                 QuickSort.sort(cats, 0, cats.length - 1);
-                // TODO: Print the sorted Array
                 printCats(cats);
 
                 // Search for a key
+                /*** Optional: read the key from user input ***/
                 int key = 10; // age
                 System.out.println("Searching for: " + key);
-                int catAtIndex = BinarySearch.searchForCat(cats, key);
+                // TODO: Search for a key using BinarySearch
                 // TODO: if you found a cat matching the key, store the cat and print it out
             }
         }
         scanner.close();
+    }
+
+    public static void printCats(Cat[] cats) {
+        // TODO: Print the sorted Array
+        // Hint: add a toString method to the Cat class
     }
 
     /*
@@ -44,12 +49,6 @@ public class App {
      * ! NO NEED TO TOUCH THE LINES BELOW !
      * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
      */
-
-    public static void printCats(Cat[] cats) {
-        for (Cat cat : cats) {
-            System.out.println(cat.toString());
-        }
-    }
 
     public static Cat[] readCatsFromFile(String fileName) {
         try {

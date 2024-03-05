@@ -1,5 +1,5 @@
 /*
- * Created on 2024-02-17
+ * Created on 2024-03-04
  *
  * Copyright (c) 2024 Nadine von Frankenberg
  */
@@ -69,10 +69,5 @@
         } else {
             System.out.println("This cat already has an owner: " + this.owner.getName());
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Cat [name=" + name + ", age=" + age + ", fur=" + fur + "]";
     }
 }

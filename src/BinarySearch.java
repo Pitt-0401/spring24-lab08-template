@@ -7,7 +7,7 @@
 public class BinarySearch {
 
     public static int searchForCat(Cat[] array, int key) {
-       // TODO: Task 2 - implement 
+       // TODO: Task 2 - implement binary search to search for a key (= age)
        return -1;
     }
 }

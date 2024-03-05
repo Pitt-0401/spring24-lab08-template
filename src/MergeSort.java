@@ -34,10 +34,12 @@ public class MergeSort {
         Cat rightSubArray[] = new Cat[rightElementLength];
 
         // Copy data to sub-arrays arrays
-        for (int i = 0; i < leftElementLength; ++i)
+        for (int i = 0; i < leftElementLength; ++i) {
             leftSubArray[i] = array[left + i];
-        for (int j = 0; j < rightElementLength; ++j)
+        }
+        for (int j = 0; j < rightElementLength; ++j) {
             rightSubArray[j] = array[mid + 1 + j];
+        }
 
         /* Merge the sub-arrays arrays */
         int i = 0;
@@ -55,7 +57,6 @@ public class MergeSort {
         }
 
         // TODO: Copy remaining elements of leftSubArray[], if any
-
 
         // TODO: Copy remaining elements of rightSubArray[], if any
 
